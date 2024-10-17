@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts",
+    "dev": "nodemon index.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,8 @@
     "helmet": "^8.0.0",
     "http": "^0.0.1-security",
     "install": "^0.13.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "socket.io": "^4.8.0"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",
