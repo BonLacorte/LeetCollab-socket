@@ -14,15 +14,15 @@ const app = express();
 const server = http.createServer(app); // Create HTTP server
 const io = new Server(server, {
     cors: {
-        // origin: 'http://localhost:3000',
-        origin: 'https://leetcollab.vercel.app',
-        credentials: true,
-        methods: ['GET', 'POST'],
+        origin: ["https://leetcollab.vercel.app", "http://localhost:3000"],
+        methods: ["GET", "POST"],
+        credentials: true
     },
     // cors: {
     //     origin: '*', // Allow cross-origin requests (you can restrict this based on your client domain)
     // },
 });
+
 
 // Middleware
 app.use(express.json());
