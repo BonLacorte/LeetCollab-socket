@@ -32,16 +32,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
-// Routes
-// app.use('/user', userRoutes);
-// app.use('/problem', problemRoutes);
-// app.get('/', (req, res) => {
-//     res.send('Socket.IO server is running');
-// });
-// app.get('/hello', (req, res) => {
-//     res.send('Hello World!'); 
-// });
-
 type Room = {
     users: Member[] | null;
     selectedProblem: DBProblem | null;
@@ -50,8 +40,6 @@ type Room = {
     messages: Message[];
     whiteboard: any[];
 };
-
-
 
 // Temporary in-memory store for rooms and their passwords
 // const rooms: { [key: string]: { password: string; users: string[] } } = {};
